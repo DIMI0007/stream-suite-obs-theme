@@ -1,4 +1,4 @@
-/* Stream Suite OBS Theme 0.1.1
+/* Stream Suite OBS Theme 0.1.2
  * Author: DMITRII (DIMI0007)
  * A small OBS Studio 33 theme variant for built-in docks.
  * It extends OBS Yami; no OBS theme files are copied here.
@@ -10,6 +10,83 @@
     extends: 'com.obsproject.Yami';
     author: 'DMITRII';
     dark: 'true';
+}
+
+/* Main OBS window: menu and the chrome around the video preview. */
+QMenuBar#menubar {
+    background: #080f18;
+    color: #dfe8ff;
+    border-bottom: 1px solid #263244;
+}
+
+QMenuBar#menubar::item {
+    background: transparent;
+    color: #dfe8ff;
+}
+
+QMenuBar#menubar::item:selected,
+QMenuBar#menubar::item:pressed {
+    background: #12332e;
+    color: #e7fff4;
+    border-radius: 4px;
+}
+
+QMenu#menu_File,
+QMenu#menuBasic_MainMenu_Edit,
+QMenu#viewMenu,
+QMenu#profileMenu,
+QMenu#sceneCollectionMenu,
+QMenu#menuTools,
+QMenu#menuBasic_MainMenu_Help {
+    background: #0b131e;
+    color: #dfe8ff;
+    border: 1px solid #263244;
+}
+
+QMenu#menu_File::item:selected,
+QMenu#menuBasic_MainMenu_Edit::item:selected,
+QMenu#viewMenu::item:selected,
+QMenu#profileMenu::item:selected,
+QMenu#sceneCollectionMenu::item:selected,
+QMenu#menuTools::item:selected,
+QMenu#menuBasic_MainMenu_Help::item:selected {
+    background: #12332e;
+    color: #e7fff4;
+}
+
+QWidget#centralwidget,
+QWidget#canvasEditor,
+QWidget#previewContainer,
+QWidget#previewXContainer {
+    background: #080f18;
+    color: #dfe8ff;
+}
+
+QFrame#contextContainer {
+    background: #0b131e;
+    color: #dfe8ff;
+    border: 1px solid #263244;
+    border-radius: 6px;
+}
+
+QFrame#contextContainer QPushButton,
+QWidget#previewXContainer QPushButton,
+QWidget#previewXContainer QComboBox {
+    background: #182434;
+    color: #e1ebff;
+    border: 1px solid #344865;
+    border-radius: 5px;
+}
+
+QFrame#contextContainer QPushButton:hover,
+QWidget#previewXContainer QPushButton:hover,
+QWidget#previewXContainer QComboBox:hover {
+    background: #23364a;
+    border-color: #4d7185;
+}
+
+OBSPreviewScalingLabel#previewScalePercent {
+    color: #b4c9df;
 }
 
 /* Built-in dock headers only. Third-party docks keep their own title styling. */
