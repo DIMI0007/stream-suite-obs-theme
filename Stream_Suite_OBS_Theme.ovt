@@ -1,4 +1,4 @@
-/* Stream Suite OBS Theme 0.1.2
+/* Stream Suite OBS Theme 0.1.3
  * Author: DMITRII (DIMI0007)
  * A small OBS Studio 33 theme variant for built-in docks.
  * It extends OBS Yami; no OBS theme files are copied here.
@@ -14,20 +14,22 @@
 
 /* Main OBS window: menu and the chrome around the video preview. */
 QMenuBar#menubar {
-    background: #080f18;
-    color: #dfe8ff;
-    border-bottom: 1px solid #263244;
+    background: #101b28;
+    color: #c4d2e2;
+    border-bottom: 1px solid #2b3b4d;
+    font-size: 13px;
 }
 
 QMenuBar#menubar::item {
     background: transparent;
-    color: #dfe8ff;
+    color: #c4d2e2;
+    padding: 4px 7px;
 }
 
 QMenuBar#menubar::item:selected,
 QMenuBar#menubar::item:pressed {
-    background: #12332e;
-    color: #e7fff4;
+    background: #19372f;
+    color: #e0ede8;
     border-radius: 4px;
 }
 
@@ -38,9 +40,9 @@ QMenu#profileMenu,
 QMenu#sceneCollectionMenu,
 QMenu#menuTools,
 QMenu#menuBasic_MainMenu_Help {
-    background: #0b131e;
-    color: #dfe8ff;
-    border: 1px solid #263244;
+    background: #101b28;
+    color: #c4d2e2;
+    border: 1px solid #2b3b4d;
 }
 
 QMenu#menu_File::item:selected,
@@ -50,43 +52,49 @@ QMenu#profileMenu::item:selected,
 QMenu#sceneCollectionMenu::item:selected,
 QMenu#menuTools::item:selected,
 QMenu#menuBasic_MainMenu_Help::item:selected {
-    background: #12332e;
-    color: #e7fff4;
+    background: #19372f;
+    color: #e0ede8;
 }
 
 QWidget#centralwidget,
 QWidget#canvasEditor,
 QWidget#previewContainer,
 QWidget#previewXContainer {
-    background: #080f18;
-    color: #dfe8ff;
+    background: #0e1925;
+    color: #c4d2e2;
 }
 
 QFrame#contextContainer {
-    background: #0b131e;
-    color: #dfe8ff;
-    border: 1px solid #263244;
+    background: #101b28;
+    color: #c4d2e2;
+    border: 1px solid #2b3b4d;
     border-radius: 6px;
+}
+
+QFrame#contextContainer QLabel {
+    color: #c4d2e2;
+    font-size: 12px;
 }
 
 QFrame#contextContainer QPushButton,
 QWidget#previewXContainer QPushButton,
 QWidget#previewXContainer QComboBox {
-    background: #182434;
-    color: #e1ebff;
-    border: 1px solid #344865;
+    background: #1a2a39;
+    color: #c9d8e8;
+    border: 1px solid #2d4257;
     border-radius: 5px;
 }
 
 QFrame#contextContainer QPushButton:hover,
 QWidget#previewXContainer QPushButton:hover,
 QWidget#previewXContainer QComboBox:hover {
-    background: #23364a;
-    border-color: #4d7185;
+    background: #25394a;
+    border-color: #49657a;
 }
 
 OBSPreviewScalingLabel#previewScalePercent {
-    color: #b4c9df;
+    color: #afc2d5;
+    font-size: 12px;
 }
 
 /* Built-in dock headers only. Third-party docks keep their own title styling. */
