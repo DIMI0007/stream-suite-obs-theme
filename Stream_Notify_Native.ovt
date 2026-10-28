@@ -1,0 +1,152 @@
+/* Stream Notify Native 0.1.0
+ * Author: DMITRII (DIMI0007)
+ * A small OBS Studio 33 theme variant for built-in docks.
+ * It extends OBS Yami; no OBS theme files are copied here.
+ */
+
+@OBSThemeMeta {
+    name: 'Stream Notify Native';
+    id: 'com.dimi0007.StreamNotifyNative';
+    extends: 'com.obsproject.Yami';
+    author: 'DMITRII';
+    dark: 'true';
+}
+
+/* Built-in dock headers only. Third-party docks keep their own title styling. */
+OBSDock#scenesDock::title,
+OBSDock#sourcesDock::title,
+OBSDock#mixerDock::title,
+OBSDock#transitionsDock::title,
+OBSDock#controlsDock::title {
+    background: #0b131e;
+    color: #e7fff4;
+    border-bottom: 1px solid #263244;
+}
+
+/* Native scenes, sources, transitions and controls. No global QWidget rule. */
+#scenesFrame,
+#sourcesFrame,
+#transitionsFrame,
+#controlsFrame,
+#stackedMixerArea {
+    background: #080f18;
+    color: #dfe8ff;
+}
+
+SceneTree#scenes,
+SourceTree#sources {
+    background: #0b131e;
+    color: #dfe8ff;
+    border: 1px solid #263244;
+    border-radius: 6px;
+}
+
+SceneTree#scenes::item:selected,
+SourceTree#sources::item:selected {
+    background: #12332e;
+    color: #e7fff4;
+    border: 1px solid #197657;
+    border-radius: 4px;
+}
+
+SceneTree#scenes::item:hover,
+SourceTree#sources::item:hover {
+    background: #142633;
+    border: 1px solid #38516d;
+}
+
+#scenesToolbar QToolButton,
+#sourcesToolbar QToolButton {
+    background: #101925;
+    color: #c8d8ee;
+    border: 1px solid #263244;
+    border-radius: 5px;
+}
+
+#scenesToolbar QToolButton:hover,
+#sourcesToolbar QToolButton:hover {
+    background: #182b3b;
+    border-color: #3a6071;
+}
+
+#transitionsFrame QComboBox {
+    background: #101925;
+    color: #dfe8ff;
+    border: 1px solid #344865;
+    border-radius: 5px;
+}
+
+#controlsFrame QPushButton {
+    background: #182434;
+    color: #e1ebff;
+    border: 1px solid #344865;
+    border-radius: 6px;
+}
+
+#controlsFrame QPushButton:hover {
+    background: #23364a;
+    border-color: #4d7185;
+}
+
+#controlsFrame QPushButton:pressed {
+    background: #10202d;
+}
+
+#streamButton.state-active,
+#broadcastButton.state-active {
+    background: #0c5844;
+    border-color: #00d58a;
+    color: #e7fff4;
+}
+
+#recordButton.state-active,
+#pauseRecordButton.state-active {
+    background: #782835;
+    border-color: #ff647e;
+    color: #fff1f3;
+}
+
+/* Built-in audio mixer. Keep green/yellow/red level semantics. */
+#mixerDock VolumeControl,
+#mixerDock VolumeMeter {
+    background: #0b131e;
+}
+
+#mixerDock VolumeName QLabel,
+#mixerDock VolumeControl QLabel {
+    color: #dfe8ff;
+}
+
+#hVolumeWidgets VolumeControl {
+    border-bottom: 1px solid #263244;
+}
+
+#mixerDock QSlider::groove:horizontal {
+    background: #1d3042;
+    border: 1px solid #344865;
+    border-radius: 3px;
+}
+
+#mixerDock QSlider::sub-page:horizontal {
+    background: #34cce9;
+    border-radius: 3px;
+}
+
+#mixerDock QSlider::handle:horizontal {
+    background: #e7fff4;
+    border: 1px solid #65dbe0;
+    border-radius: 5px;
+}
+
+#mixerDock VolumeMeter {
+    color: #9cb2c9;
+    qproperty-backgroundNominalColor: #10382d;
+    qproperty-backgroundWarningColor: #4c3a16;
+    qproperty-backgroundErrorColor: #4f1d2b;
+    qproperty-foregroundNominalColor: #00df8c;
+    qproperty-foregroundWarningColor: #ffcd57;
+    qproperty-foregroundErrorColor: #ff647e;
+    qproperty-magnitudeColor: #263244;
+    qproperty-majorTickColor: #c5d3e6;
+    qproperty-minorTickColor: #70829a;
+}
