@@ -1,4 +1,4 @@
-/* Stream Suite OBS Theme 0.1.3
+/* Stream Suite OBS Theme 0.1.4
  * Author: DMITRII (DIMI0007)
  * A small OBS Studio 33 theme variant for built-in docks.
  * It extends OBS Yami; no OBS theme files are copied here.
@@ -112,7 +112,6 @@ OBSDock#controlsDock::title {
 #scenesFrame,
 #sourcesFrame,
 #transitionsFrame,
-#controlsFrame,
 #stackedMixerArea {
     background: #080f18;
     color: #dfe8ff;
@@ -161,34 +160,46 @@ SourceTree#sources::item:hover {
     border-radius: 5px;
 }
 
+#controlsFrame {
+    background: #0e1925;
+    color: #c4d2e2;
+}
+
 #controlsFrame QPushButton {
-    background: #182434;
-    color: #e1ebff;
-    border: 1px solid #344865;
+    background: #1a2a39;
+    color: #c9d8e8;
+    border: 1px solid #2d4257;
     border-radius: 6px;
+    font-size: 12px;
 }
 
 #controlsFrame QPushButton:hover {
-    background: #23364a;
-    border-color: #4d7185;
+    background: #25394a;
+    border-color: #49657a;
 }
 
 #controlsFrame QPushButton:pressed {
-    background: #10202d;
+    background: #162633;
+}
+
+#controlsFrame QPushButton:disabled {
+    background: #15212d;
+    color: #8194a9;
+    border-color: #25394a;
 }
 
 #streamButton.state-active,
 #broadcastButton.state-active {
-    background: #0c5844;
-    border-color: #00d58a;
-    color: #e7fff4;
+    background: #154335;
+    border-color: #28876a;
+    color: #d6eee5;
 }
 
 #recordButton.state-active,
 #pauseRecordButton.state-active {
-    background: #782835;
-    border-color: #ff647e;
-    color: #fff1f3;
+    background: #59303a;
+    border-color: #a65568;
+    color: #f0dde2;
 }
 
 /* Built-in audio mixer. Keep green/yellow/red level semantics. */
