@@ -1,12 +1,12 @@
-/* Stream Notify Native 0.1.0
+/* Stream Suite OBS Theme 0.1.1
  * Author: DMITRII (DIMI0007)
  * A small OBS Studio 33 theme variant for built-in docks.
  * It extends OBS Yami; no OBS theme files are copied here.
  */
 
 @OBSThemeMeta {
-    name: 'Stream Notify Native';
-    id: 'com.dimi0007.StreamNotifyNative';
+    name: 'Stream Suite OBS Theme';
+    id: 'com.dimi0007.StreamSuiteOBSTheme';
     extends: 'com.obsproject.Yami';
     author: 'DMITRII';
     dark: 'true';
